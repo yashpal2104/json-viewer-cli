@@ -3,7 +3,7 @@ module github.com/yashpal2104/json-viewer-cli
 go 1.24.3
 
 require (
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible
+	github.com/dgrijalva/jwt-go v3.2.0
 	github.com/spf13/cobra v1.9.1
 )
 
