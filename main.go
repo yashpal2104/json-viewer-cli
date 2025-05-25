@@ -4,21 +4,20 @@
 package main
 
 import (
-	"log"
+	"fmt"
 
-	"github.com/gorilla/websocket"
+	"github.com/dgrijalva/jwt-go"
 	"github.com/yashpal2104/json-viewer-cli/cmd"
 	// "github.com/yashpal2104/json-viewer-cli/data"
 )
 
 func main() {
 	cmd.Execute()
-	dummyUse()
+	dummyJWT()
 }
 
-func dummyUse() {
-	_, _, err := websocket.DefaultDialer.Dial("ws://localhost:8080/ws", nil)
-	if err != nil {
-		log.Println("Dummy dial error:", err)
-	}
+func dummyJWT() {
+	token := jwt.New(jwt.SigningMethodHS256)
+	tokenString, _ := token.SignedString([]byte("secret"))
+	fmt.Println("Dummy token:", tokenString)
 }
