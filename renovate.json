@@ -1,4 +1,4 @@
 {
   "extends": ["config:base"],
-  "logLevel": "debug"
+  "mode": "auto"
 }
