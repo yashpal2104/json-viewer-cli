@@ -24,11 +24,7 @@ func Execute() {
 var rootCmd = &cobra.Command{
 	Use:   "mycli",
 	Short: "It helps you select fruits of different sizes and test out the Renovate tool",
-	Long:
-			`This CLI is designed for you to select fruits based on different sizes blah blah blah you don't care about this
-	 		even I don't care about it what we are trying to do here is to test out
-			the Renovate tool to automate dependency updates and patch regular security threats 
-			through making PRs to fix it.`,
+	Long:  `This CLI is designed for you to select fruits based on different sizes blah blah blah you don't care about this even I don't care about it what we are trying to do here is to test out the Renovate tool to automate dependency updates and patch regular security threats through making PRs to fix it.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) {
