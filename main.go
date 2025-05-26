@@ -4,15 +4,18 @@
 package main
 
 import (
+
 	"fmt"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/yashpal2104/json-viewer-cli/cmd"
 	// "github.com/yashpal2104/json-viewer-cli/data"
+	"github.com/yashpal2104/json-viewer-cli/cmd"
 )
 
 func main() {
 	cmd.Execute()
+
 	dummyJWT()
 }
 
@@ -21,3 +24,5 @@ func dummyJWT() {
 	tokenString, _ := token.SignedString([]byte("secret"))
 	fmt.Println("Dummy token:", tokenString)
 }
+}
+
